@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkIT</title>
+    <link rel="stylesheet" href="../style_global/style.scss">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/png">
+</head>
+
+<body>
+    <div class="wrapper__create-resume d-flex">
+        <!-- Sidebar  -->
+        <nav class="sidebar-empl">
+            <div class="sidebar-empl__wrapper sticky-top">
+                <div class="sidebar-empl__header">
+                    <h3 class="py-4">Menu</h3>
+                </div>
+                <ul class=" sidebar-empl__list list-unstyled components flex-md justify-content-md-center">
+                    <li>
+                        <a href="./en-homepage.html"><i class="bi bi-house-door pe-2"></i><span
+                                class="sidebar-empl__item">Home</span></a>
+                    </li>
+                    <li>
+                        <a href="./en_search_vacancies.html"> <i class="bi bi-pencil-square pe-2"></i><span
+                                class="sidebar-empl__item">
+                                Find a job</span></a>
+                    </li>
+                    <li>
+                        <a href="./en-news.html"><i class="bi bi-newspaper pe-2"></i><span
+                                class="sidebar-empl__item ms-sm-1">Blog</span></a>
+                    </li>
+                    <li>
+                        <a href="./en-about.html"><i class="bi bi-person pe-2"></i> <span class="sidebar-empl__item">
+                                About us</span></a>
+                    </li>
+                    <li>
+                        <a href="./en-contacts.html"><i class="bi bi-envelope pe-2"></i> <span
+                                class="sidebar-empl__item">Contacts</span> </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar-empl create-resume__navbar navbar-expand-lg navbar-light bg-light d-flex ">
+                <div class="navbar-create-resume">
+                    <a href="#">
+                        <img class="nav__logo-img" src="../assets/images/logo.png" alt="logo"></a>
+                    <div class="create-resume_header-content">
+                        <h3 class="header__second pt-md-3">Applicants</h3>
+                        <p class="header__subtitle create-resume__subtitle">YOUR FIRST JOB IN THE IT WORLD</p>
+                    </div>
+                </div>
+            </nav>
+            <form class="container form new-resume-form" novalidate>
+                <div class="row justify-content-center ">
+                    <div class="col-md-12 form-box">
+                        <p class="form-about text-center">Tell us about yourself</p>
+                        <fieldset>
+                            <p class="create-resume__title  text-center">
+                                Contacts
+                            </p>
+                            <div class="row">
+                                <label for="firstName" class="g-2">First Name</label>
+                                <input class="form-control form-control-sm resume-item" type="text"
+                                    placeholder="First Name" aria-label="first name" id="firstName">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="row">
+                                <label for="lastName" class="g-2">Last Name</label>
+                                <input class="form-control form-control-sm resume-item" type="text"
+                                    placeholder="Last Name" aria-label="last name" id="lastName">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="row">
+                                <label for="email" class="g-2">Email</label>
+                                <input class="form-control form-control-sm resume-item" type="email" placeholder="Email"
+                                    aria-label="Email" id="email">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="row">
+                                <label for="phone" class="g-2">Phone number</label>
+                                <input class="form-control form-control-sm resume-item" type="tel"
+                                    placeholder="Phone number" aria-label="tel" id="phone">
+                                <div class="error-message"></div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend class=" create-resume__title text-center">
+                                Place Of Residence
+                            </legend>
+                            <div class="row">
+                                <label for="country" class="g-2">Country</label>
+                                <input class="form-control form-control-sm resume-item" type="text"
+                                    placeholder="Country" aria-label=".form-control-sm" id="country">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="row">
+                                <label for="city" class="g-2">City</label>
+                                <input class="form-control form-control-sm resume-item" type="text" placeholder="City"
+                                    aria-label=".form-control-sm" id="city">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="row">
+                                <label for="zipCode" class="g-2">Zip Code</label>
+                                <input class="form-control form-control-sm resume-item" type="number"
+                                    placeholder="Zip Code" aria-label=".form-control-sm" id="zipCode">
+                                <div class="error-message"></div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="edu-fieldset">
+                            <legend class="create-resume__title text-center">
+                                Education
+                            </legend>
+                            <div class="row">
+                                <input class="form-control form-control-sm resume-item" type="text"
+                                    aria-label=".form-control-sm" id="education1">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="row edu-extra_rows"></div>
+                            <button type="button" class="btn btn-outline-primary btn-sm btn_add-row btn_add-row-edu">Add
+                                row</button>
+                            <button type="button"
+                                class="btn btn-outline-primary btn-sm btn_add-row btn_delete-row-edu btn_delete-row-hide">Delete
+                                row</button>
+                        </fieldset>
+                        <fieldset class="exp-fieldset">
+                            <legend class="create-resume__title text-center">
+                                Work experience
+                            </legend>
+                            <div class="row">
+                                <input class="form-control form-control-sm resume-item" type="text"
+                                    aria-label=".form-control-sm" id="experience1">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="row exp-extra_rows"></div>
+                            <button type="button" class="btn btn-outline-primary btn-sm btn_add-row btn_add-row-exp">Add
+                                row</button>
+                            <button type="button"
+                                class="btn btn-outline-primary btn-sm btn_add-row btn_delete-row-exp btn_delete-row-hide">Delete
+                                row</button>
+                        </fieldset>
+                        <div class="row registration__group mt-4">
+                            <div class="success"></div>
+                            <button type="submit" class="btn btn-primary btn-sm text-center col-12">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <footer class="bg-light text-center text-lg-start">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Footer text</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                molestias.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Footer text</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                molestias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2020 Copyright:
+                    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../js/en-create-resume.js"></script>
+</body>
+
+</html>

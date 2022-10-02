@@ -1,0 +1,207 @@
+.page-searching-applicants {
+    background-color: #F7F9FC;
+    font-family: 'Roboto';
+}
+
+.searching {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+.searching__form {
+flex-grow: 1;
+}
+.navbar-empl__logo {
+    width:100%;
+}
+.navbar-apl {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+.header__second-appl {
+    font-size: 1.3em;
+}
+.subtitle__apllsearch {
+    font-size: 1em;
+    font-weight: 500;
+}
+.search__card {
+    max-width: 700px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px rgb(206, 206, 206) solid;
+    box-shadow: 15px 10px 20px 10px rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+
+.search__card-subtitle {
+    font-size: 12px;
+    color: #686868;
+    line-height: 19px
+}
+
+
+.filter-vacancy__filter-title{
+    padding: 10px 0px 10px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.filter-vacancy__title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0px 0px 0px;
+}
+
+.filter-vacancy__cities {
+    width: 240px;
+    height: 40px;
+    border: 1px solid $light-gray;
+    border-radius: 10px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.filter-vacancy__card-input {
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.filter-vacancy__input-salary{
+    max-width: 118px;
+    border: 1px solid $light-gray;
+    border-radius: 10px;
+    padding: 2px 10px;
+    margin-bottom: 2px;
+}
+
+.filter-vacancy__point{
+    max-width: 240px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px 0px 0px;
+}
+
+.search__card {
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px rgb(206, 206, 206) solid;
+    box-shadow: 15px 10px 20px 10px rgb(240, 240, 240);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.filter-vacancy__btns{
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-vacancy__change,
+.filter-vacancy__throwoff {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0px 0px 0px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.filter-vacancy__throwoff {
+    margin: 10px 0px 0px 0px;
+    color: white;
+    background-color:  rgb(162, 73, 164);
+    &:hover {
+        background-color: rgb(135, 56, 136);
+    }
+
+    &:active{
+        background-color: rgb(102, 30, 103);
+    }
+}
+
+.filter-vacancy__change {
+    background-color:rgb(0, 102, 255);
+    color: white;
+        &:hover {
+            background-color: rgb(34, 100, 198);
+        }
+    
+        &:active{
+            background-color: rgb(10, 71, 162);
+        }
+    }
+
+
+
+
+    .__select {
+        display: flex;
+        width: 230px;
+        height: 204px;
+        margin: 0 auto;
+        overflow: hidden;
+        
+        border-radius: 5px;
+        border: solid 1px #c7ccd1;
+      }
+      
+      .__select__content {
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        width: 100%;
+        
+        overflow-y: auto;
+
+      }
+      
+      .__select__input {
+        display: none;
+      
+        &:checked + label {
+          background-color: #dedede;
+        }
+        &:disabled + label {
+          opacity: 0.6;
+          pointer-events: none;
+        }
+      }
+      
+      .__select__label {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        height: 40px;
+        padding: 0 16px;
+        
+        transition: all 0.2s ease-out;
+      
+        cursor: pointer;
+        
+        & + input + & {
+          border-top: 1px solid #C7CCD160;
+        }
+      
+        &:hover {
+          background-color: #D8093A !important;
+      
+          color: #ffffff;
+        }
+      }

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style_global/style.scss">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/png">
+    <title>Document</title>
+</head>
+
+<body class="page-searching-applicants">
+    <div class="wrapper-empl d-flex">
+        <!-- Sidebar  -->
+        <nav class="sidebar-empl">
+            <div class="sidebar-empl__wrapper sticky-top">
+                <div class="sidebar-empl__header">
+                    <h3 class="py-4">Menu</h3>
+                </div>
+                <ul class=" sidebar-empl__list list-unstyled components flex-md justify-content-md-center">
+                    <li>
+                        <a href="./en-homepage.html"><i class="bi bi-house-door pe-2"></i><span
+                                class="sidebar-empl__item">Home</span></a>
+                    </li>
+                    <li>
+                        <a href="./en_create_vac.html"> <i class="bi bi-pencil-square pe-2"></i><span
+                                class="sidebar-empl__item"> Post a Job</span></a>
+                    </li>
+                    <li>
+                        <a href="./en-news.html"><i class="bi bi-newspaper pe-2"></i><span
+                                class="sidebar-empl__item ms-sm-1">Blog</span></a>
+                    </li>
+                    <li>
+                        <a href="./en-about.html"><i class="bi bi-person pe-2"></i> <span class="sidebar-empl__item">
+                                About Us</span></a>
+                    </li>
+                    <li>
+                        <a href="./en-contacts.html"><i class="bi bi-envelope pe-2"></i> <span
+                                class="sidebar-empl__item">Contacts</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content  -->
+        <div id="content-appl">
+            <nav class="navbar-empl create-resume__navbar navbar-expand-lg navbar-light bg-light d-flex ">
+                <div class="navbar-create-resume">
+                    <img class="nav__logo-img" src="../assets/images/logo.png" alt="logo">
+                    <div class="create-resume_header-content">
+                        <h3 class="header__second pt-md-3"> Employers</h3>
+                        <p class="header__subtitle create-resume__subtitle">YOUNG BLOOD IN THE IT WORLD</p>
+                    </div>
+                </div>
+            </nav>
+            <!-- Searching form-->
+            <div class="container searching">
+                <div class="searching__form searching__form-applicants">
+                    <div class="card w-100 mt-1 p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Searching" id="inputSearchApp"
+                                list="keywords">
+                            <datalist id="keywords">
+                                <option class="input-option">Frontend Developer</option>
+                                <option class="input-option">Backend Developer</option>
+                                <option class="input-option">Java Developer</option>
+                                <option class="input-option">Javascript Developer</option>
+                                <option class="input-option">Python Developer</option>
+                                <option class="input-option">C# Developer</option>
+                                <option class="input-option">C++ Developer</option>
+                                <option class="input-option">PHP Developer</option>
+                                <option class="input-option">Flutter Developer</option>
+                            </datalist>
+                            <div class="input-group-append"><button
+                                    class="btn btn-primary btn__search btn__search-employermain" id="btnSearchApp"><i
+                                        class="class=bi bi-search bi_employer"></i></button></div>
+                        </div>
+                        <div class="pt-3 w-100 searching__result">
+                            <div id="cards">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="filter-mobile" id="btnappfilter1">Filter</div>
+                    <div class="row searching__filters searching__filters_shadow mt-1 filter-desktop">
+                        <div class="filter">
+                            <div class="filter-content">
+                                <div class="filter-vacancy__type">
+                                    <div class="filter-vacancy__title">City</div>
+                                    <input type="text" name="city" id="city" placeholder="City" list="cities">
+                                    <datalist id="cities">
+
+                                    </datalist>
+
+                                </div>
+                                <div class=" filter__card">
+                                    <div class="filter-vacancy__title">Level</div>
+                                    <div><input class="filter__card-input form-check-input level" id="junior"
+                                            value="junior" type="radio" name="level" />
+                                        <label class="filter__card-label" for="junior">Junior</label></div>
+                                    <div><input class="filter__card-input form-check-input level" id="middle"
+                                            value="middle" type="radio" name="level" />
+                                        <label class="filter__card-label" for="middle">Middle</label></div>
+                                    <div><input class="filter__card-input form-check-input level" id="senior"
+                                            value="senior" type="radio" name="level" />
+                                        <label class="filter__card-label" for="senior">Senior</label></div>
+                                </div>
+
+                                <div class="filter__card">
+                                    <div class="filter-vacancy__title">Work experience</div>
+                                    <div><input class="filter__card-input form-check-input experience" type="radio"
+                                            name="experience" value="zero" id="zero" />
+                                        <label class="filter__card-label " for="zero">Less than a year</label></div>
+                                    <div><input class="filter__card-input form-check-input experience" type="radio"
+                                            name="experience" value="small" id="small" />
+                                        <label class=" filter__card-label " for="small">1-3 years</label></div>
+                                    <div><input class="filter__card-input form-check-input experience" type="radio"
+                                            name="experience" value="medium" id="medium" />
+                                        <label class="filter__card-label " for="medium">3-6 years</label></div>
+                                    <div><input class="filter__card-input form-check-input experience" type="radio"
+                                            name="experience" value="large" id="large" />
+                                        <label class="filter__card-label " for="large">Over 6 year</label></div>
+                                </div>
+
+                                <div class="filter__card">
+                                    <div class="filter-vacancy__title">Salary rate $</div>
+                                    <div class="filter__card-salary">
+                                        <input class="filter-vacancy__input-salary" type="number" placeholder="From"
+                                            id="minSalary" />
+                                        <input class="filter-vacancy__input-salary" type="number" placeholder="To"
+                                            id="maxSalary" /></div>
+                                    <div>
+                                        <input class="filter__card-input form-check-input" type="checkbox" name="salary"
+                                            id="salary" />
+                                        <label class="filter__card-label" for="salary">With salary</label></div>
+                                </div>
+                                <div class="filter__card">
+                                    <div class="filter-vacancy__title">Work format</div>
+                                    <div><input class="filter__card-input form-check-input format" id="distant"
+                                            value="distant" type="radio" name="level" />
+                                        <label class="filter__card-label">Remote</label></div>
+                                    <div><input class="filter__card-input form-check-input format" id="office"
+                                            value="office" type="radio" name="level" />
+                                        <label class="filter__card-label">In-office</label></div>
+                                    <div><input class="filter__card-input form-check-input format" id="hybrid"
+                                            value="hybrid" type="radio" name="level" />
+                                        <label class="filter__card-label">Hybrid</label></div>
+                                </div>
+                                <div class="filter-vacancy__btns">
+                                    <div class="filter-vacancy__change" id="btnFilter">Apply</div>
+                                    <div class="filter-vacancy__throwoff" id="btnReboot">Reset</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Searching Form end-->
+            <footer class="bg-light text-center text-lg-start">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Footer text</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                molestias.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Footer text</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                molestias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2020 Copyright:
+                    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../js/en-search_applicants.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+[{
+  "company":"Google",
+  "keyWords": ["developer","разработчик", "frontend", "junior", "Mountain View", "Маунтин-Вью", "Калифорния", "California", "Google"],
+  "experience": "1",
+  "level": "junior",
+  "occupation": "Junior Frontend developer",
+  "jobFormat": [ "Офис", "Гибрид"],
+  "salary": "500",
+  "city": "Маунтин-Вью",
+  "city2": "Mountain View"
+},
+{
+  "company":"RevBoss",
+  "keyWords": ["developer","разработчик", "программист", "React", "junior", "Дарем", "Durham", "RevBoss"],
+  "experience": "1",
+  "level": "junior",
+  "occupation": "Junior React Js Frontend developer",
+  "jobFormat": ["Офис", "Гибрид"],
+  "salary": "600",
+  "city": "Дарем",
+  "city2": "Durham"
+},
+{
+  "company":"USAA",
+  "keyWords": ["developer","разработчик", "junior", "HTML", "CSS", "Сан-Антонио", "San Antonio", "USAA"],
+  "experience": "3",
+  "level": "junior",
+  "occupation": "Junior Frontend HTML/CSS Developer",
+  "jobFormat": ["Офис"],
+  "salary": "600",
+  "city": "Сан-Антонио",
+  "city2": "San Antonio"
+},
+{
+  "company":"Ubisoft",
+  "keyWords": ["developer","разработчик", "программист", "Wordpress", "senior", "Монтрёй", "Montreuil", "Ubisoft"],
+  "experience": "8",
+  "level": "senior",
+  "occupation": "Senior Wordpress Developer",
+  "jobFormat": ["Удаленный", "Гибрид"],
+  "salary": "3000",
+  "city": "Монтрёй",
+  "city2": "Montreuil"
+},
+{
+  "company":"CACI",
+  "keyWords": ["developer","разработчик", "программист", "python", "Рестон", "Reston", "CACI"],
+  "experience": "7",
+  "level": "senior",
+  "occupation": "Senior Python Developer",
+  "jobFormat": ["Удаленный", "Гибрид"],
+  "salary": "2500",
+  "city": "Рестон",
+  "city2": "Reston"
+},
+{
+  "company":"Nvidia",
+  "keyWords": ["developer","разработчик", "программист", "JavaScript", "Санта-Клара", "Santa Clara", "Nvidia"],
+  "experience": "6",
+  "level": "middle",
+  "occupation": "JavaScript Developer",
+  "jobFormat": ["Удаленный", "Офис", "Гибрид"],
+  "salary": "1500",
+  "city": "Санта-Клара",
+  "city2": "Santa Clara"
+},
+{
+  "company":"Webxloo",
+  "keyWords": ["developer","разработчик", "программист", "HTML", "Тампа", "Tampa", "Webxloo"],
+  "experience": "7",
+  "level": "middle",
+  "occupation": "HTML Developer ",
+  "jobFormat": ["Удаленный"],
+  "salary": "1600",
+  "city": "Тампа",
+  "city2": "Tampa"
+},
+{
+  "company":"OLX",
+  "keyWords": ["React","разработчик", "программист", "Senior", "developer", "OLX", "Хофддорп", "Hoofddorp"],
+  "experience": "8",
+  "level": "senior",
+  "occupation": "Senior React Frontend Developer",
+  "jobFormat": ["Удаленный", "Офис", "Гибрид"],
+  "salary": "4000",
+  "city": "Хофддорп",
+  "city2": "Hoofddorp"
+},
+{
+  "company":"Docker",
+  "keyWords": ["developer","разработчик", "программист", "php", "Docker", "Сан-Франциско", "San Francisco"],
+  "experience": "9",
+  "level": "senior",
+  "occupation": "Senior PHP Developer",
+  "jobFormat": ["Удаленный"],
+  "salary": "6000",
+  "city": "Сан-Франциско",
+  "city2": "San Francisco"
+},
+{
+  "company":"Yahoo!",
+  "keyWords": ["developer","разработчик", "программист", "ruby", "ruby on rails", "Yahoo! ", "Саннивейл", "Sunnyvale"],
+  "experience": "10",
+  "level": "senior",
+  "occupation": "Senior React Developer",
+  "jobFormat": ["Удаленный", "Офис", "Гибрид"],
+  "salary": "6500",
+  "city": "Саннивейл",
+  "city2": "Sunnyvale"
+},
+{
+  "company":"Siemens",
+  "keyWords": ["developer","разработчик", "программист", "Java", "Берлин", "Berlin", "Siemens"],
+  "experience": "11",
+  "level": "senior",
+  "occupation": "Senior Java developer",
+  "jobFormat": ["Удаленный", "Офис", "Гибрид"],
+  "salary": "6000",
+  "city": "Берлин",
+  "city2": "Berlin"
+},
+{
+  "company":"DTiQ",
+  "keyWords": ["developer", "PHP", "разработчик", "MySQL", "DTiQ", "Лас-Вегас", "Las Vegas"],
+  "experience": "12",
+  "level": "senior",
+  "currency": "$",
+  "occupation": "Senior PHP/MySQL Developer",
+  "jobFormat": ["Удаленный", "Офис", "Гибрид"],
+  "salary": "5000",
+  "city": "Лас-Вегас",
+  "city2": "Las Vegas"
+}
+]

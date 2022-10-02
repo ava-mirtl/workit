@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style_global/style.scss">
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/png">
+    <title>Main Employers</title>
+</head>
+
+<body class="page_employers">
+    <div id="app">
+        <div class="wrapper-empl d-flex">
+            <!-- Sidebar  -->
+            <nav class="sidebar-empl">
+                <div class="sidebar-empl__wrapper sticky-top">
+                    <div class="sidebar-empl__header">
+                        <h3 class="py-4">Меню</h3>
+                    </div>
+                    <ul class=" sidebar-empl__list list-unstyled components flex-md justify-content-md-center">
+                        <li>
+                            <a href="./index.html"><i class="bi bi-house-door pe-2"></i><span
+                                    class="sidebar-empl__item">Главная</span></a>
+                        </li>
+                        <li>
+                            <a href="./views/create-vacancy.html"> <i class="bi bi-pencil-square pe-2"></i><span
+                                    class="sidebar-empl__item"> Создать
+                                    Вакансию</span></a>
+                        </li>
+                        <li>
+                            <a href="./views/search_applicants.html"><i class="bi bi-search pe-2"></i><span
+                                    class="sidebar-empl__item"> Поиск сотрудников</span></a>
+                        </li>
+                        <li>
+                            <a href="./views/news.html"><i class="bi bi-newspaper pe-2"></i><span
+                                    class="sidebar-empl__item">Новости</span></a>
+                        </li>
+                        <li>
+                            <a href="./views/about.html"><i class="bi bi-person pe-2"></i> <span
+                                    class="sidebar-empl__item">
+                                    О Нас</span></a>
+                        </li>
+                        <li>
+                            <a href="./views/contacts.html"><i class="bi bi-envelope pe-2"></i> <span
+                                    class="sidebar-empl__item">Контакты</span> </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Page Content  -->
+            <div id="content">
+                <nav class="navbar-empl navbar-expand-lg navbar-light bg-light d-flex ">
+                    <div class="navbar-empl__logo">
+                        <img class="nav__logo-img" src="./assets/images/logo.png" alt="logo">
+                        <h3 class="header__second pt-sm-3"> Работодателям</h3>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal_sign-in" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-bg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div>
+                                        <img class="nav__logo-img" src="./assets/images/logo.png" alt="logo">
+                                        <p class="subtitle__apllsearch">ТВОЯ СВЕЖАЯ КРОВЬ В МИРЕ IT</p>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row form-reg m-4">
+                                        <div class="col-md-12">
+                                            <form class="row sign-up_form" novalidate>
+                                                <h3 class="registration__title text-center header__second">Вход на
+                                                    сайт
+                                                </h3>
+                                                <div class="row">
+                                                    <label for="username_sign-in" class="form-label g-2">Логин</label>
+                                                    <input class="form-control" type="text" name="username"
+                                                        maxlength="20" minlength="5" id="username_sign-in"
+                                                        placeholder="Логин" required>
+                                                    <div class="error-message"></div>
+                                                </div>
+                                                <div class="row ">
+                                                    <label for="password_sign-in" class="form-label g-2">Пароль</label>
+                                                    <input class="form-control" type="password" name="Пароль"
+                                                        minlength="6" id="password_sign-in" placeholder="Пароль"
+                                                        required>
+                                                    <div class="error-message"></div>
+                                                </div>
+                                                <div class="row mt-4">
+                                                    <button class="btn btn-primary" type="submit">Войти</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav navbar-nav nav-empl__links d-flex">
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-secondary btn-sm me-2 btn-signin__employer"
+                                data-bs-toggle="modal" data-bs-target="#modal_sign-in" id="sign-up">Войти</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-primary btn-sm me-3" data-bs-toggle="modal"
+                                data-bs-target="#modal_sign-up">Регистрация</button>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Modal -->
+                <div class="modal fade" id="modal_sign-up" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div>
+                                    <img class="nav__logo-img" src="./assets/images/logo.png" alt="logo">
+                                    <p class="subtitle__apllsearch">ТВОЯ СВЕЖАЯ КРОВЬ В МИРЕ IT</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row form-reg m-4 d-flex justify-content-center">
+                                    <div class="col-md-8">
+                                        <form class="registration__form row" novalidate>
+                                            <h3 class="registration__title text-center header__second">
+                                                Регистрация
+                                            </h3>
+                                            <div class="row">
+                                                <label for="username" class="form-label g-2">Логин</label>
+                                                <input class="form-control" type="text" name="username" maxlength="20"
+                                                    minlength="5" id="username" placeholder="Логин" required>
+                                                <div class="error-message"></div>
+                                            </div>
+                                            <div class="row ">
+                                                <label for="password" class="form-label g-2">Пароль</label>
+                                                <input class="form-control" type="password" name="Пароль" minlength="6"
+                                                    id="password" placeholder="Пароль" required>
+                                                <div class="error-message"></div>
+                                            </div>
+                                            <div class="row ">
+                                                <label for="password" class="form-label g-2">Потвердите
+                                                    Пароль</label>
+                                                <input class="form-control" type="password" name="Пароль" minlength="6"
+                                                    id="passwordRepeat" placeholder="Потвердите Пароль" required>
+                                                <div class="error-message"></div>
+                                            </div>
+                                            <div class="row">
+                                                <label for="email" class="form-label g-2">Email</label>
+                                                <input class="form-control" type="email" name="email" id="email"
+                                                    placeholder="Email" required>
+                                                <div class="error-message"></div>
+                                            </div>
+                                            <div class=" row registration__group mt-4">
+                                                <button class="btn btn-primary btn-block create-account" type="submit"
+                                                    id="register">Отправить</button>
+                                            </div>
+                                            <div class="success" id="success"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Motto-->
+                <div class="row m-md-3 p-4">
+                    <div class="col-12">
+                        <p class="header__subtitle subtitle__employer ">ТВОЯ СВЕЖАЯ КРОВЬ В МИРЕ IT</p>
+                    </div>
+                </div>
+                <!-- Searching form-->
+                <div class="container d-flex justify-content-center">
+                    <div class="card w-100 mt-2 p-4">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Поиск" id="searchRequest">
+                            <div class="input-group-append"><button
+                                    class="btn btn-primary btn__search btn__search-employermain"><i
+                                        class="class=bi bi-search bi_employer"></i></button>
+                            </div>
+                        </div>
+                        <!--Block Information-->
+                        <div class="row popular justify-content-center pt-1 ">
+                            <div class="col-12 popular__block">
+                                <div class="popular__title fs-5"> Популярные заголовки</div>
+                                <div class="row justify-content-center pt-3">
+                                    <div class="col-lg-2 col-md-3 col-sm-5 col-7 pe-md-0">
+                                        <p class="popular__titles fs-6">
+                                            Frontend
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3  col-sm-5 col-7 pe-md-0">
+                                        <p class="popular__titles fs-6">
+                                            Backend
+                                        </p>
+                                    </div>
+                                    <div class=" col-lg-2 col-md-3 col-sm-5 col-7 pe-md-0">
+                                        <p class="popular__titles fs-6">
+                                            Java
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3  col-sm-5 col-7 pe-md-0">
+                                        <p class="popular__titles fs-6">
+                                            Python
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3  col-sm-5 col-7  pe-md-0">
+                                        <p class="popular__titles fs-6">
+                                            Javascript
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3  col-sm-5 col-7 pe-md-0">
+                                        <p class="popular__titles fs-6">
+                                            C#
+                                        </p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-3  col-sm-5 col-7 pe-md-0">
+                                        <p class="popular__titles title__one fs-6">
+                                            PHP
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3  col-sm-5 col-7 pe-md-0">
+                                        <p class="popular__titles title__two fs-6">
+                                            1-C
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3  col-sm-5 col-7 pe-md-0">
+                                        <p class="popular__titles title_three fs-6">
+                                            Flutter
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3  col-sm-5 col-7 pe-md-0">
+                                        <p class="popular__titles title__four fs-6">
+                                            Ruby
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3  col-sm-5 col-7 pe-md-0">
+                                        <p class="popular__titles title__five fs-6">
+                                            Lorem ipsum
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3  col-sm-5 col-7 pe-md-0">
+                                        <p class="popular__titles title__five fs-6">
+                                            Lorem ipsum
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Searching Form end-->
+                <!-- Information Block end-->
+                <section id="gallery" class="row m-5">
+                    <div class="wrapper__block__info">
+                        <div class="row ">
+                            <div class="col-lg-3 md-4 sm-8">
+                                <div class="card">
+                                    <img src="./assets/images/Information_Block.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sunset</h5>
+                                        <p class="card-text fs-6">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.
+                                        </p>
+                                        <a href="" class=" btn btn-outline-secondary btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#modal__read_more1">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Read More 1-->
+                            <div class="modal fade" id="modal__read_more1" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row form-reg m-4">
+                                                <div class="col-md-12">
+                                                    <div class="card card_modal">
+                                                        <img src="./assets/images/Information_Block.jpg" alt=""
+                                                            class="card-img-top">
+                                                        <div class="card-body card-body_modal">
+                                                            <h5 class="card-title">Sunset</h5>
+                                                            <p class="card-text fs-6">Lorem ipsum dolor sit amet
+                                                                consectetur, adipisicing elit. Lorem ipsum dolor sit
+                                                                amet
+                                                                consectetur adipisicing elit. Sed dolorem, veniam sunt
+                                                                ad
+                                                                tempore ipsa aut, distinctio, voluptatibus neque iusto
+                                                                eligendi eius accusantium. Esse nostrum ipsam quibusdam
+                                                                doloribus amet recusandae! Lorem ipsum dolor sit amet
+                                                                consectetur, adipisicing elit. Lorem ipsum dolor sit
+                                                                amet
+                                                                consectetur adipisicing elit. Sed dolorem, veniam sunt
+                                                                ad
+                                                                tempore ipsa aut, distinctio, voluptatibus neque iusto
+                                                                eligendi eius accusantium. Esse nostrum ipsam quibusdam
+                                                                doloribus amet recusandae!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 md-4 sm-8">
+                                <div class="card">
+                                    <img src="./assets/images/Information_Block.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sunset</h5>
+                                        <p class="card-text fs-6">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.
+                                        </p>
+                                        <a href="" class="btn btn-outline-secondary  btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#modal__read_more2">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Read More 2-->
+                            <div class="modal fade" id="modal__read_more2" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row form-reg m-4">
+                                                <div class="col-md-12">
+                                                    <div class="card card_modal">
+                                                        <img src="./assets/images/Information_Block.jpg" alt=""
+                                                            class="card-img-top">
+                                                        <div class="card-body card-body_modal">
+                                                            <h5 class="card-title">Sunset</h5>
+                                                            <p class="card-text fs-6">Lorem ipsum dolor sit amet
+                                                                consectetur, adipisicing elit. Lorem ipsum dolor sit
+                                                                amet
+                                                                consectetur adipisicing elit. Sed dolorem, veniam sunt
+                                                                ad
+                                                                tempore ipsa aut, distinctio, voluptatibus neque iusto
+                                                                eligendi eius accusantium. Esse nostrum ipsam quibusdam
+                                                                doloribus amet recusandae! Lorem ipsum dolor sit amet
+                                                                consectetur, adipisicing elit. Lorem ipsum dolor sit
+                                                                amet
+                                                                consectetur adipisicing elit. Sed dolorem, veniam sunt
+                                                                ad
+                                                                tempore ipsa aut, distinctio, voluptatibus neque iusto
+                                                                eligendi eius accusantium. Esse nostrum ipsam quibusdam
+                                                                doloribus amet recusandae!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 md-4 sm-8">
+                                <div class="card">
+                                    <img src="./assets/images/Information_Block.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sunset</h5>
+                                        <p class="card-text fs-6">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.
+                                        </p>
+                                        <a href="" class="btn btn-outline-secondary  btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#modal__read_more3">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Read More 3-->
+                            <div class="modal fade" id="modal__read_more3" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row form-reg m-4">
+                                                <div class="col-md-12">
+                                                    <div class="card card_modal">
+                                                        <img src="./assets/images/Information_Block.jpg" alt=""
+                                                            class="card-img-top">
+                                                        <div class="card-body card-body_modal">
+                                                            <h5 class="card-title">Sunset</h5>
+                                                            <p class="card-text fs-6">Lorem ipsum dolor sit amet
+                                                                consectetur, adipisicing elit. Lorem ipsum dolor sit
+                                                                amet
+                                                                consectetur adipisicing elit. Sed dolorem, veniam sunt
+                                                                ad
+                                                                tempore ipsa aut, distinctio, voluptatibus neque iusto
+                                                                eligendi eius accusantium. Esse nostrum ipsam quibusdam
+                                                                doloribus amet recusandae! Lorem ipsum dolor sit amet
+                                                                consectetur, adipisicing elit. Lorem ipsum dolor sit
+                                                                amet
+                                                                consectetur adipisicing elit. Sed dolorem, veniam sunt
+                                                                ad
+                                                                tempore ipsa aut, distinctio, voluptatibus neque iusto
+                                                                eligendi eius accusantium. Esse nostrum ipsam quibusdam
+                                                                doloribus amet recusandae!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 md-4 sm-8">
+                                <div class="card">
+                                    <img src="./assets/images/Information_Block.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sunset</h5>
+                                        <p class="card-text fs-6">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.
+                                        </p>
+                                        <a href="" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#modal__read_more4">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Read More 4-->
+                            <div class="modal fade" id="modal__read_more4" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row form-reg m-4">
+                                                <div class="col-md-12">
+                                                    <div class="card card_modal">
+                                                        <img src="./assets/images/Information_Block.jpg" alt=""
+                                                            class="card-img-top">
+                                                        <div class="card-body card-body_modal">
+                                                            <h5 class="card-title">Sunset</h5>
+                                                            <p class="card-text fs-6">Lorem ipsum dolor sit amet
+                                                                consectetur, adipisicing elit. Lorem ipsum dolor sit
+                                                                amet
+                                                                consectetur adipisicing elit. Sed dolorem, veniam sunt
+                                                                ad
+                                                                tempore ipsa aut, distinctio, voluptatibus neque iusto
+                                                                eligendi eius accusantium. Esse nostrum ipsam quibusdam
+                                                                doloribus amet recusandae! Lorem ipsum dolor sit amet
+                                                                consectetur, adipisicing elit. Lorem ipsum dolor sit
+                                                                amet
+                                                                consectetur adipisicing elit. Sed dolorem, veniam sunt
+                                                                ad
+                                                                tempore ipsa aut, distinctio, voluptatibus neque iusto
+                                                                eligendi eius accusantium. Esse nostrum ipsam quibusdam
+                                                                doloribus amet recusandae!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="bg-light text-center text-lg-start">
+                    <div class="container p-4">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                                <h5 class="text-uppercase">Footer text</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                    molestias.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                                <h5 class="text-uppercase">Footer text</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                    molestias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                        © 2020 Copyright:
+                        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/employers_sign-in.js"></script>
+    <script type="module" src="./js/reg_applicants.js"></script>
+    <script type="module" src="./js/search_app_from_main.js"></script>
+</body>
+
+</html>

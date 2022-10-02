@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style_global/style.scss">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/png">
+    <title>Create vacancy</title>
+</head>
+
+<body class="createvacancy_page">
+    <div class="wrapper-empl d-flex">
+        <!-- Sidebar  -->
+        <nav class="sidebar-empl">
+            <div class="sidebar-empl__wrapper sticky-top">
+                <div class="sidebar-empl__header">
+                    <h3 class="py-4">Menu</h3>
+                </div>
+                <ul class=" sidebar-empl__list list-unstyled components flex-md justify-content-md-center">
+                    <li>
+                        <a href="./en-homepage.html"><i class="bi bi-house-door pe-2"></i><span
+                                class="sidebar-empl__item">Home</span></a>
+                    </li>
+                    <li>
+                        <a href="./en_search_applicants.html"> <i class="bi bi-pencil-square pe-2"></i><span
+                                class="sidebar-empl__item">
+                                Find candidates</span></a>
+                    </li>
+                    <li>
+                        <a href="./en-news.html"><i class="bi bi-newspaper pe-2"></i><span
+                                class="sidebar-empl__item ms-sm-1">Blog</span></a>
+                    </li>
+                    <li>
+                        <a href="./en-about.html"><i class="bi bi-person pe-2"></i> <span class="sidebar-empl__item">
+                                About us</span></a>
+                    </li>
+                    <li>
+                        <a href="./en-contacts.html"><i class="bi bi-envelope pe-2"></i> <span
+                                class="sidebar-empl__item">Contacts</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content  -->
+        <div id="content-appl">
+            <nav class="navbar-empl create-resume__navbar navbar-expand-lg navbar-light bg-light d-flex ">
+                <div class="navbar-create-resume">
+                    <img class="nav__logo-img" src="../assets/images/logo.png" alt="logo">
+                    <div class="create-resume_header-content">
+                        <h3 class="header__second pt-md-3"> Employers</h3>
+                        <p class="header__subtitle create-resume__subtitle">YOUNG BLOOD IN THE IT WORLD</p>
+                    </div>
+                </div>
+            </nav>
+            <!--Motto-->
+            <div class="row m-1 p-1">
+                <div class="col-12 d-flex justify-content-start">
+                </div>
+            </div>
+            <!-- Create vacancy form-->
+            <div class="create-vacancy form-group bg-white rounded col-md-7 m-auto shadow p-3 mb-5 bg-white">
+                <form class="new-vacancy-form create-vacancy__name p-2 rounded bg" novalidate>
+                    <fieldset class="create-vacancy__income p-2 rounded bg mt-1">
+                        <legend class="text-center fw-bold">Job title</legend>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="vacancy" placeholder="Job title" id="title">
+                            <div class="error-message"></div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="create-vacancy__income p-2 rounded bg mt-1">
+                        <legend class="text-center fw-bold">Salary rate</legend>
+                        <div class="row mb-3 salary">
+                            <div class="col">
+                                <input type="number" class="form-control" name="from" placeholder="From:"
+                                    id="minSalary">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" name="to" placeholder="To:" id="maxSalary">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" name="currency" placeholder="Currency:"
+                                    id="currency">
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="create-vacancy__description p-2 rounded bg mt-1">
+                        <legend class="text-center fw-bold">Job Description</legend>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="obligations" placeholder="Duties" id="duties">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="skills" placeholder="Skills" id="skills">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="conditions" placeholder="Working conditions"
+                                id="conditions">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="add" placeholder="Additional information"
+                                id="details">
+                            <div class="error-message"></div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="create-vacancy__contact p-2 rounded bg mt-1">
+                        <legend class="text-center fw-bold">Contacts</legend>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="name" placeholder="First Name" id="firstName">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="lastname" placeholder="Last Name"
+                                id="lastName">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="email" class="form-control" name="email" placeholder="Email" required
+                                id="email">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="tel" class="form-control" name="tel" placeholder="Phone number" id="phone">
+                            <div class="error-message"></div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="create-vacancy__location p-2 rounded bg mt-1">
+                        <legend class="text-center fw-bold">Location</legend>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="country" placeholder="Country" id="country">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="locality" placeholder="City" id="city">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="number" class="form-control" name="zipCode" placeholder="Zip Code"
+                                id="zipCode">
+                            <div class="error-message"></div>
+                        </div>
+                    </fieldset>
+                    <div class="success"></div>
+                    <div class="row mb-3">
+                        <button type="submit" class="btn btn-primary btn-block" name="btn">Continue</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Create vacancy Form end-->
+            <footer class="bg-light text-center text-lg-start">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Footer text</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                molestias.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Footer text</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                molestias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2020 Copyright:
+                    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../js/en-create-vacancy.js"></script>
+</body>
+
+</html>

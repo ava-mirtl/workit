@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать вакансию</title>
+    <link rel="stylesheet" href="../style_global/style.scss">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/png">
+</head>
+
+<body class="createvacancy_page">
+    <div class="wrapper-empl d-flex">
+        <!-- Sidebar  -->
+        <nav class="sidebar-empl">
+            <div class="sidebar-empl__wrapper sticky-top">
+                <div class="sidebar-empl__header">
+                    <h3 class="py-4">Меню</h3>
+                </div>
+                <ul class=" sidebar-empl__list list-unstyled components flex-md justify-content-md-center">
+                    <li>
+                        <a href="../index.html"><i class="bi bi-house-door pe-2"></i><span
+                                class="sidebar-empl__item">Главная</span></a>
+                    </li>
+                    <li>
+                        <a href="./search_applicants.html"> <i class="bi bi-pencil-square pe-2"></i><span
+                                class="sidebar-empl__item">Поиск Кандидатов</span></a>
+                    </li>
+                    <li>
+                        <a href="./news.html"><i class="bi bi-newspaper pe-2"></i><span
+                                class="sidebar-empl__item">Новости</span></a>
+                    </li>
+                    <li>
+                        <a href="./about.html"><i class="bi bi-person pe-2"></i> <span class="sidebar-empl__item">
+                                О Нас</span></a>
+                    </li>
+                    <li>
+                        <a href="./contacts.html"><i class="bi bi-envelope pe-2"></i> <span
+                                class="sidebar-empl__item">Контакты</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar-empl create-resume__navbar navbar-expand-lg navbar-light bg-light d-flex ">
+                <div class="navbar-create-resume">
+                    <img class="nav__logo-img" src="../assets/images/logo.png" alt="logo">
+                    <div class="create-resume_header-content">
+                        <h3 class="header__second pt-md-3"> Работодателям</h3>
+                        <p class="header__subtitle create-resume__subtitle">ТВОЯ СВЕЖАЯ КРОВЬ В МИРЕ IT</p>
+                    </div>
+                </div>
+            </nav>
+            <!--Motto-->
+            <div class="row m-1 p-1">
+                <div class="col-12 d-flex justify-content-start">
+                    <!--  <p class="header__subtitle subtitle__apllsearch">ТВОЯ СВЕЖАЯ КРОВЬ В МИРЕ IT</p>-->
+                </div>
+            </div>
+            <!-- Create vacancy form-->
+            <div class="create-vacancy form-group bg-white rounded col-md-7 m-auto shadow p-3 mb-5 bg-white">
+                <form class="new-vacancy-form create-vacancy__name p-2 rounded bg" novalidate>
+                    <div class="row mb-3">
+                        <input type="text" class="form-control" name="vacancy"
+                            placeholder="Название вакансии/ стажировки" id="title">
+                        <div class="error-message"></div>
+                    </div>
+                    <fieldset class="create-vacancy__income p-2 rounded bg mt-1">
+                        <legend class="text-center fw-bold">Уровень дохода</legend>
+                        <div class="row mb-3 salary">
+                            <div class="col">
+                                <input type="number" class="form-control" name="from" placeholder="От:" id="minSalary">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" name="to" placeholder="До:" id="maxSalary">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" name="currency" placeholder="Валюта:"
+                                    id="currency">
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="create-vacancy__description p-2 rounded bg mt-1">
+                        <legend class="text-center fw-bold">Описание вакансии</legend>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="obligations" placeholder="Обязанности"
+                                id="duties">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="skills" placeholder="Требования/навыки"
+                                id="skills">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="conditions" placeholder="Условия"
+                                id="conditions">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="add" placeholder="Дополнительно" id="details">
+                            <div class="error-message"></div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="create-vacancy__contact p-2 rounded bg mt-1">
+                        <legend class="text-center fw-bold">Контакты</legend>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="name" placeholder="Имя" id="firstName">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="lastname" placeholder="Фамилия" id="lastName">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="email" class="form-control" name="email" placeholder="Email" required
+                                id="email">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="tel" class="form-control" name="tel" placeholder="Телефон" id="phone">
+                            <div class="error-message"></div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="create-vacancy__location p-2 rounded bg mt-1">
+                        <legend class="text-center fw-bold">Место расположения</legend>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="country" placeholder="Страна" id="country">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="text" class="form-control" name="locality" placeholder="Населенный пункт"
+                                id="city">
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="number" class="form-control" name="zipCode" placeholder="Индекс" id="zipCode">
+                            <div class="error-message"></div>
+                        </div>
+                    </fieldset>
+                    <div class="success"></div>
+                    <div class="row mb-3">
+                        <button type="submit" class="btn btn-primary btn-block" name="btn">Разместить</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Create vacancy Form end-->
+            <footer class="bg-light text-center text-lg-start">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Footer text</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                molestias.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Footer text</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                molestias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2020 Copyright:
+                    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../js/create-vacancy.js"></script>
+</body>
+
+</html>

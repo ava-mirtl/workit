@@ -1,0 +1,18 @@
+@import "./variables";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "../style/applicants_main.scss";
+@import "../style/create_resume.scss";
+@import "../style/create_vacancy.scss";
+@import "../style/employers_main.scss";
+@import "../style/homepage.scss";
+@import "../style/registration_applicants.scss";
+@import "../style/registration_employers.scss";
+@import "../style/search_applicants.scss";
+@import "../style/vacancy_search.scss";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";

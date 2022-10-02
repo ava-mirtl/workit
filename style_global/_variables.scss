@@ -1,0 +1,69 @@
+$main-color: rgb(1, 71, 175);
+$minor-color: #06f;
+$deep-gray: #333;
+$light-gray: #BDBDBD;
+$background: #E5E5E5;
+$bodycolor: #F7F9FC;
+$cardsshadow:rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/Robotolight.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/Roboto.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/Robotomedium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/Robotobold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* Миксин для сиреневой кнопки ( class="btn btn-primary + задать свой уникальный класс)*/
+@mixin button-lilac {
+border: 1px rgb(163, 73, 164) solid;
+color:rgb(163, 73, 164);
+width: 101.7px;
+}
+@mixin button-lilac-hover {
+        background-color: rgb(163, 73, 164);
+        color: white;
+        border: 1px rgb(163, 73, 164) solid;
+    
+}
+/* Миксин для поля поиск*/
+@mixin searching-form {
+    border-radius: 7px;
+	border: 1.5px solid #5878FF;
+}
+@mixin searching-form-focus {
+    box-shadow: none;
+	border: 1.5px solid #E3E6ED;
+	background-color: #F7F8FD;
+	letter-spacing: 1px;
+}

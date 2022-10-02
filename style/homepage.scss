@@ -1,0 +1,149 @@
+.homepage__wrapper {
+    background-color: $bodycolor;
+    
+
+    .homepage__header {
+
+        .header__logo{
+            max-width: 300px;
+        }
+
+        .header__lang {
+            text-decoration: none;
+            color: rgb(36, 36, 39);
+            font-size: 18px;
+        }
+    }
+
+    .header__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: 20px;
+
+    }
+
+    .header-top{
+        margin-top: 3%;
+    }
+
+    .header__subtitle {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin-bottom: 4%;
+        color: #999;
+
+    }
+
+    .header__subtitle {
+        animation: myAnim 4s ease-out 0s 1 normal none;
+    }
+
+    @keyframes myAnim {
+        0% {
+            animation-timing-function: ease-in;
+            opacity: 1;
+            transform: translateY(-45px);
+        }
+
+        24% {
+            opacity: 1;
+        }
+
+        40% {
+            animation-timing-function: ease-in;
+            transform: translateY(-24px);
+        }
+
+        65% {
+            animation-timing-function: ease-in;
+            transform: translateY(-12px);
+        }
+
+        82% {
+            animation-timing-function: ease-in;
+            transform: translateY(-6px);
+        }
+
+        93% {
+            animation-timing-function: ease-in;
+            transform: translateY(-4px);
+        }
+
+        25%,
+        55%,
+        75%,
+        87% {
+            animation-timing-function: ease-out;
+            transform: translateY(0px);
+        }
+
+        100% {
+            animation-timing-function: ease-out;
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .header__border {
+        width: 30%;
+        margin: 0 auto;
+        border-bottom: solid 2px $minor-color;
+    }
+
+}
+
+.homepage__button {
+    align-self: center;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 23em;
+    height: 6em;
+    border-radius: 3px;
+    margin: 10px 50px;
+    padding: 45px;
+    background-color: rgb(0, 102, 255);
+    color: $deep-gray;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
+}
+
+.homepage__button:hover{
+    background-color: rgb(162, 73, 164);
+    align-self: center;
+}
+
+.btn-title {
+    align-self: center;
+    justify-self: center;
+}
+
+.header__block {
+    margin-top: 7%;
+    margin-bottom: 30%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.linka{
+text-decoration: none;
+color: $background;
+padding: 44px 64px;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px){
+    .homepage__button{
+        width: 20em;
+        margin: 10px 15px;
+    }
+
+.linka{
+    padding: 40px 33px;
+    word-spacing: 5px;
+}
+}

@@ -1,0 +1,132 @@
+.page-searching-applicants {
+    background-color: #F7F9FC;
+    font-family: 'Roboto';
+}
+#content-appl {
+    width: 100%;
+    padding: 5px 20px 20px 20px;
+    transition: all 0.3s;
+}
+.searching {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+.searching__form {
+flex-grow: 1;
+}
+.navbar-empl__logo {
+    width:100%;
+}
+.navbar-apl {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+.header__second-appl {
+    font-size: 1.3em;
+}
+.subtitle__apllsearch {
+    font-size: 1em;
+    font-weight: 500;
+}
+.searching__filters {
+    flex-basis: 23%;
+    background-color: #fff;
+    border-radius: 4px;
+    justify-self: flex-start;
+    margin-left: 1rem;
+    padding: 10px;
+    &_shadow{
+        box-shadow: $cardsshadow;
+    }
+}
+
+.shadow-on{
+    box-shadow: $cardsshadow;
+}
+
+.search__card {
+    max-width: 700px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px rgb(206, 206, 206) solid;
+    box-shadow: 15px 10px 20px 10px rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+
+.filter__card-title {
+    margin-bottom: 8px;
+}
+
+
+.search__card {
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px rgb(206, 206, 206) solid;
+    box-shadow: 15px 10px 20px 10px rgb(240, 240, 240);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search__card-photo {
+    border-radius: 100px;
+    max-width: 100px;
+max-height: 100px;
+    object-fit: cover;
+}
+
+.filter-vacancy__all1 {
+    display: none;
+}
+
+.filter-mobile {
+    display: none;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0;
+    color: #fff;
+    background-color: #06f;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+@media only screen and  (max-width: 767px) {
+    .searching {
+        flex-direction: column-reverse;
+    }
+
+    .filter-mobile{
+        display: flex;
+    }
+    .searching__filters{
+        margin-left: 0;
+        padding: 0;
+        &_shadow{
+            box-shadow: none;
+        }
+    }
+    .filter-content {
+        display: none;
+    }
+
+    .filter-vacancy__throwoff{
+        margin-bottom: 10px;
+    }
+}
+@media only screen and  (max-width: 595px) {
+    #content-appl {
+        padding: 5px;
+    }
+    .search__card-photo{
+        display: none;
+    }
+}
